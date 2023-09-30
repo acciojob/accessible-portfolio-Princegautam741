@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<header role="heading">
+    <h1>My Accessible Portfolio</h1>
+    <nav role="navigation">
+        <ul>
+            <li><a href="#about" role="listitem">About Me</a></li>
+            <li><a href="#projects" role="listitem">Projects</a></li>
+            <li><a href="#contact" role="listitem">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main role="main">
+    <section id="about" role="heading">
+        <h2>About Me</h2>
+        <img src="your_image_path_here" alt="Your Name's Image" role="img">
+        <p>Brief description about yourself goes here.</p>
+    </section>
+
+    <section id="projects" role="list">
+        <h2>Projects</h2>
+        <ul>
+            <li role="listitem">Project 1: Description of Project 1</li>
+            <li role="listitem">Project 2: Description of Project 2</li>
+            <li role="listitem">Project 3: Description of Project 3</li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+
+    <section id="contact" role="heading">
+        <h2>Contact</h2>
+        <p>Contact information goes here.</p>
+    </section>
+</main>
 
 </body>
-
 </html>
